@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Append table</h1>
+    <div class="input">
+      <input id="inputValue" type="text" placeholder="vardas">
+      <input id="inputValue2" type="text" placeholder="pavardė">
+      <input id="inputValue3" type="number" placeholder="amžius">
+    </div>
+
+    <div class="button">
+      <button id="button" onclick="addRows()" onclick="function">Pridėti</button>
+      <button onclick="deleteRow1()">Ištrinti pirmą</button>
+      <button onclick="deleteRow2()">Ištrinti paskutinį</button>
+    </div>
+
+<!-- https://www.w3schools.com/tags/tag_thead.asp -->
+<!-- lentelę kūrėme 5-toje užduotyje -->
+    <table id="myTable" class="first">
+      <head>
+        <tr>
+          <th class="ID">Vardas</th>
+          <th class="ID1">Pavardė</th>
+          <th class="ID">Amžius</th>
+        </tr>
+      </head>
+<!-- tbody goes same rule same as thead  -->
+<!-- pasigilinti kaip veikia -->
+      <tbody id="row">
+        <td class="names">Jonas</td>
+        <td class="names">Rimkus</td>
+        <td class="names">54</td>
+        <tr>
+        <td class="names">Vestina</td>
+        <td class="names">Petronytė</td>
+        <td class="names">31</td>
+      </tr>
+      <tr>
+        <td class="names">Marius</td>
+        <td class="names">Dulinskas</td>
+        <td class="names">23</td>
+      </tr>
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
